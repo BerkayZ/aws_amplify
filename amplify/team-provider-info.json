@@ -15,7 +15,7 @@
       "function": {
         "productFn": {
           "deploymentBucketName": "amplify-awsamplify-dev-220223-deployment",
-          "s3Key": "amplify-builds/productFn-7263493831417367464b-build.zip"
+          "s3Key": "amplify-builds/productFn-624655475745586d4d37-build.zip"
         },
         "getAllProductsFn": {
           "deploymentBucketName": "amplify-awsamplify-dev-220223-deployment",

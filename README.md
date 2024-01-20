@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# AWS Amplify Assignment API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains a set of API requests for managing products in an AWS Amplify project. The API supports basic CRUD (Create, Read, Update, Delete) operations for products.
 
-## Available Scripts
+## Table of Contents
+- [Add Product](#add-product)
+- [Get Product](#get-product)
+- [Update Product](#update-product)
+- [Delete Product](#delete-product)
+- [Get All Products](#get-all-products)
 
-In the project directory, you can run:
+## Add Product
 
-### `npm start`
+### Request
+- **Method**: POST
+- **Endpoint**: `https://{{api_url}}/product/:productId`
+- **Path Variable**:
+    - `productId`: `new-product-id-2`
+- **Body**:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```json
+{
+"active": true,
+"name": "Name of product",
+"description": "Lorem ipsum dolor sit amet",
+"stock": 19
+}
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Get Product
 
-### `npm test`
+### Request
+- **Method**: GET
+- **Endpoint**: `https://{{api_url}}/product/:productId`
+- **Path Variable**:
+- `productId`: `new-product-id-1`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Update Product
 
-### `npm run build`
+### Request
+- **Method**: PUT
+- **Endpoint**: `https://{{api_url}}/product/:productId`
+- **Path Variable**:
+- `productId`: `new-product-id-1`
+- **Body**:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```json
+{
+"active": false,
+"name": "Name of product 2",
+"description": "Lorem ipsum dolor sit amet neene",
+"stock": 15
+}
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Delete Product
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Request
+- **Method**: DELETE
+- **Endpoint**: `https://{{api_url}}/product/:productId`
+- **Path Variable**:
+- `productId`: `new-product-id-1`
 
-### `npm run eject`
+## Get All Products
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Request
+- **Method**: GET
+- **Endpoint**: `https://{{api_url}}/products`

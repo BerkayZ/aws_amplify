@@ -60,7 +60,7 @@ exports.handler = async (event) => {
                 try {
                     const requestBody = JSON.parse(event.body);
 
-                    if (!requestBody.name || !requestBody.description || !requestBody.stock) {
+                    if (!requestBody.name || !requestBody.description || !Number.isInteger(requestBody.stock)) {
                         return {
                             statusCode: 400,
                             headers: {
@@ -115,7 +115,7 @@ exports.handler = async (event) => {
                 try {
                     const requestBody = JSON.parse(event.body);
 
-                    if (!requestBody.name || !requestBody.description || !requestBody.stock) {
+                    if (!requestBody.name || !requestBody.description || !Number.isInteger(requestBody.stock)) {
                         return {
                             statusCode: 400,
                             headers: {
