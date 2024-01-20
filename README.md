@@ -13,9 +13,7 @@ This repository contains a set of API requests for managing products in an AWS A
 
 ### Request
 - **Method**: POST
-- **Endpoint**: `https://{{api_url}}/product/:productId`
-- **Path Variable**:
-    - `productId`: `new-product-id-2`
+- **Endpoint**: `https://{{api_url}}/product/new`
 - **Body**:
 
 ```json
@@ -33,7 +31,7 @@ This repository contains a set of API requests for managing products in an AWS A
 - **Method**: GET
 - **Endpoint**: `https://{{api_url}}/product/:productId`
 - **Path Variable**:
-- `productId`: `new-product-id-1`
+- `productId`: `productId`
 
 ## Update Product
 
@@ -41,7 +39,7 @@ This repository contains a set of API requests for managing products in an AWS A
 - **Method**: PUT
 - **Endpoint**: `https://{{api_url}}/product/:productId`
 - **Path Variable**:
-- `productId`: `new-product-id-1`
+- `productId`: `productId`
 - **Body**:
 
 ```json
@@ -59,7 +57,7 @@ This repository contains a set of API requests for managing products in an AWS A
 - **Method**: DELETE
 - **Endpoint**: `https://{{api_url}}/product/:productId`
 - **Path Variable**:
-- `productId`: `new-product-id-1`
+- `productId`: `productId`
 
 ## Get All Products
 
