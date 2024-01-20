@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "paths": {
+    "/product/{productId}": {
+      "name": "/product/{productId}",
+      "lambdaFunction": "productFn",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/products": {
+      "name": "/products",
+      "lambdaFunction": "getAllProductsFn",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

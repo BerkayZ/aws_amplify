@@ -1,13 +1,129 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f5f5f5;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.button-primary {
+    background-color: #007bff;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.15s ease-in-out;
+    font-weight: bold;
+}
+
+.button-primary:disabled {
+    background-color: #cecece;
+    cursor: not-allowed;
+}
+
+.button-primary:hover {
+    background-color: #0069d9;
+}
+
+.tag {
+    background-color: #007bff;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.tag.active {
+    background-color: #16c23e;
+}
+
+.tag.inactive {
+    background-color: #ff1f1f;
+}
+
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-content {
+    background-color: #fff;
+    width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.modal-header h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+    outline: none;
+    font-size: 14px;
+    transition: all 0.15s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+}
+
+label {
+    font-size: 14px;
+    color: #1e1e1e;
+}
+
+.modal-header .close {
+    cursor: pointer;
+    padding: 7px;
+    height: 20px;
+    width: 20px;
+    transition: all 0.15s ease-in-out;
+}
+
+.modal-header .close:hover {
+    background-color: #e7e7e7;
+    border-radius: 50%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
