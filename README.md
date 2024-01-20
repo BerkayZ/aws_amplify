@@ -1,4 +1,4 @@
-# AWS Amplify Assignment API
+# AWS Amplify
 
 This repository contains a set of API requests for managing products in an AWS Amplify project. The API supports basic CRUD (Create, Read, Update, Delete) operations for products.
 
